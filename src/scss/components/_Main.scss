@@ -1,0 +1,44 @@
+.main {
+    padding: 2rem 1.5rem;
+
+    h3 {
+        text-transform: uppercase;
+        color: $h1;
+    }
+}
+
+.sort {
+
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5rem 0 3rem 0;
+    }
+
+    &__li {
+        padding: 1rem 2rem;
+        color: $h1;
+        text-transform: uppercase;
+        font-weight: $medium;
+        background: $corpYellow;
+        border-radius: $mainRadius;
+        transition: 0.3s all;
+        cursor: pointer;;
+
+        &:hover {
+            color: $corpWhite;
+            background: $h1;
+        }
+    }
+
+    &__active {
+        padding: 1rem 2rem;
+        color: $corpWhite;
+        text-transform: uppercase;
+        font-weight: $medium;
+        background: $h1;
+        border-radius: $mainRadius;
+        transition: 0.3s all;
+    }
+}

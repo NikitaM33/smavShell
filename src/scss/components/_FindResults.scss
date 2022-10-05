@@ -1,0 +1,58 @@
+.findResults {
+
+    &__formHeader {
+        padding-bottom: 2rem;
+    }
+
+    &__downloadBtn {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 1.5rem;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            border: none;
+            background: transparent;
+            color: $h1;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        svg {
+            margin: 0 0.5rem 0 0;
+        }
+    }
+}
+
+.results {
+
+    &__tableHeader {
+        background: $tableBlue;
+    }
+
+    &__tbody {
+        background: $corpWhite;
+
+        & tr:nth-child(even) {
+            background: $subColor;
+        }
+    }
+
+    &__th {
+        padding: 0.5rem;
+        font-size: $smallText;
+        font-weight: $medium;
+        color: $corpWhite;
+    }
+
+    &__tb {
+        padding: 0.6rem;
+        font-weight: $normal;
+    }
+}

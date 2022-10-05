@@ -1,0 +1,11 @@
+import React from 'react';
+
+const NotFound = () => {
+  return (
+    <section className="notFound">
+      <h1>Страница не найдена</h1>
+    </section>
+  )
+}
+
+export default NotFound;

@@ -1,0 +1,10 @@
+.header {
+    background: $h1;
+    border-bottom: 3px solid $corpYellow;
+
+    &__logo {
+        h1 {
+            color: $corpWhite;
+        }
+    }
+}

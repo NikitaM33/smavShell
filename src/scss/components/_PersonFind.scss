@@ -1,0 +1,72 @@
+.personFind {
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 2rem 2rem 4rem 2rem;
+        border: $border;
+        border-radius: $mainRadius;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    &__formHeader {
+        margin: 0 0 4rem 0;
+        text-align: center;
+    }
+
+    &__sendBtn {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    &__btn {
+        padding: 0.8rem 2rem;
+        background: $corpYellow;
+        color: $h1;
+        font-size: $text;
+        font-weight: $medium;
+        border: none;
+        border-radius: $mainRadius;
+        transition: 0.3s all;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.003);
+            box-shadow: $allOverShadow;
+        }
+    }
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    label {
+        width: 47%;
+        margin-bottom: 1.5rem;
+    }
+
+    &__header {
+        margin-bottom: 0.5rem;
+        color: $h1;
+        font-weight: $medium;
+    }
+
+    input {
+        width: 100%;
+        padding: 0.5rem;
+        border: $border;
+        border-radius: $mainRadius;
+        background: $corpWhite;
+    }
+}

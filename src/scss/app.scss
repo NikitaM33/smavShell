@@ -1,0 +1,61 @@
+@import './variables';
+@import './libs/normalize';
+@import './components/all';
+
+html,
+body {
+    height: 100%;
+    scrollbar-color: $mainText $h1;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    &::-webkit-scrollbar {
+        width: 7px;
+        background-color: $h1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $subColor;
+        border-radius: 9em;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: $corpYellow;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    color: $h1;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: calc(100vw - 100px);
+    height: 100%;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+        width: calc(100% - 1.5rem);
+    }
+
+    @media screen and (min-width: $mobileL) {
+        width: calc(100% - 2.5rem);
+    }
+}
+
+.personFind,
+.findResults {
+    margin: 0 0 5rem;
+}
+
+.boldFont {
+    font-weight: 700;
+    color: #000;
+}
